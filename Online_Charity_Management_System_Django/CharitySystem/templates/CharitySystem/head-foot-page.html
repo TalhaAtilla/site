@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title class="text-primary">SATEL</title>
+
+    {% load static %}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> -->
+    <link type="text/css" href="{% static 'img' %}">
+    <link type="text/css" href="{% static 'video' %}">
+    <link type="text/css" href="{% static 'media' %}">
+    <link type="text/css" rel="stylesheet" href="{% static 'font-aws/all.css'%}">
+    <link type="text/css" rel="stylesheet" href="{% static 'css/nav.css'%}">
+    <!-- <link type="text/css" rel="stylesheet" href="{% static 'css/foundation.css'%}"> -->
+    <link type="text/css" rel="stylesheet" href="{% static 'css/payment.css'%}">
+    <link type="text/css" rel="stylesheet" href="{% static 'img' %}">
+    <link type="text/css" rel="stylesheet" href="{% static 'video' %}">
+    <link type="text/css" rel="stylesheet" href="{% static 'media' %}">
+    <link type="text/css" rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+</head>
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  <nav style="background-color:rgb(4, 41, 52);" class="py-2 border-bottom">
+    <div class="container d-flex flex-wrap">
+      <ul class="nav me-auto">
+      </ul>
+      <ul class="nav">
+      </ul>
+    </div>
+  </nav>
+
+    <!-- HEADER -->
+ <!-- ----------------------------------------------------------------------------------------------------------------------------    -->
+ <header>
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+    <div class="container-fluid d-flex">
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" style="color:DEEEF0" fill="currentColor" class="bi bi-cpu" viewBox="0 0 16 16">
+        <path d="M5 0a.5.5 0 0 1 .5.5V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2A2.5 2.5 0 0 1 14 4.5h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14a2.5 2.5 0 0 1-2.5 2.5v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14A2.5 2.5 0 0 1 2 11.5H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2A2.5 2.5 0 0 1 4.5 2V.5A.5.5 0 0 1 5 0zm-.5 3A1.5 1.5 0 0 0 3 4.5v7A1.5 1.5 0 0 0 4.5 13h7a1.5 1.5 0 0 0 1.5-1.5v-7A1.5 1.5 0 0 0 11.5 3h-7zM5 6.5A1.5 1.5 0 0 1 6.5 5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5v-3zM6.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"/>
+      </svg>
+      <a class="navbar-brand fw-bolder fs-4" href="/"></a>
+      <a class="navbar-brand fw-bolder fs-4" href="/">SATEL</a>
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation" wfd-invisible="true">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse" id="navbarColor01">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <div class="btn-group">
+              <button type="button" class="btn"><a href="/calibrate/" class="btn btn-dark fw-bold" role="button">KALİBRASYON</a></button>
+              <button type="button" class="btn btn-dark dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="/calibrate/1">Portatif Gaz Ölçer Kalibrasyonu</a></li>
+                <li><a class="dropdown-item" href="/calibrate/2">Cihaz Kalibrasyonu</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="btn-group">
+              <button type="button" class="btn"><a href="/product/" class="btn btn-dark fw-bold" role="button">ÜRÜNLER</a></button>
+              <button type="button" class="btn btn-dark dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="/product/1">STL 27 ATEX Işıklı İkaz</a></li>
+                <li><a class="dropdown-item" href="/product/2">STL 57 ATEX Gaz Sensörü </a></li>
+                <li><a class="dropdown-item" href="/product/3">Kablo Alarm Sistemi</a></li>
+                <li><a class="dropdown-item" href="/product/4">Personel Takip Sistemi</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="btn-group">
+              <button type="button" class="btn"><a href="/software/" class="btn btn-dark fw-bold" role="button">YAZILIM</a></button>
+              <button type="button" class="btn btn-dark dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="/software/1">Skada Yazılım</a></li>
+                <li><a class="dropdown-item" href="/software/2">Mikro Çip Programlama</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="btn-group">
+              <button type="button" class="btn"><a href="/atex/" class="btn btn-dark fw-bold" role="button">ATEX</a></button>
+              <button type="button" class="btn btn-dark dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="/atex/1">Atex Mevzuat</a></li>
+                <li><a class="dropdown-item" href="/atex/2">IP Koruma</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="btn"><a href="/self/" class="btn btn-dark fw-bold" role="button">İLETİŞİM</a></button>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2 fw-bold" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light fw-bold" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  </header>
+<!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+<div class="bg-dark mt-5">
+    <!-- BLOCK content -->
+    {% block content %}
+    
+    {% endblock %}
+
+</div>
+    <!-- FOOTER -->
+<!-- ----------------------------------------------------------------------------------------------------------------------------------- -->
+    <div class="pt-5 pb-5 container-fluid" style="background-color: whitesmoke;">
+        <div class="container">
+            <div class="d-inline mr-2">
+                <span style="font-size:12pt; color:blue;">Follow Us</span>
+                <span class="follow">
+                    <button class="btn btn-outline-fb"><i class="fab fa-facebook-square fa-2x"></i></button>
+                    <button class="btn btn-outline-insta"><i class="fab fa-instagram-square fa-2x"></i></button>
+                    <button class="btn btn-outline-primary border-0"><i class="fab fa-twitter-square fa-2x"></i></button>
+                </span>
+            </div>
+            <div class="d-inline float-right">
+                <span class="mr-4" ><a class="link-dark text-decoration-none" href="/self/">&#169; Satel Terms Privacy</a></span>
+            </div>
+        </div>
+    </div>
+<!-- ----------------------------------------------------------------------------------------------------------------------------------- -->
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="{% static 'font-aws/all.js'%}"></script>
+<script src="{% static 'js/slides.js'%}"></script>
+<!-- <script src="{% static 'js/foundation.js'%}"></script> -->
+<script src="https://js.stripe.com/v3/"></script>
+<script src="{% static 'js/payment.js'%}"></script>
+<script src="{% static 'js/bootstrap.js'%}"></script>
+</html>
